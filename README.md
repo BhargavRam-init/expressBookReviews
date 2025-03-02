@@ -21,4 +21,4 @@ This is a book review application built with Node.js, Express, and JWT authentic
 ## How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/BhargavRam-init/expressBookReviews.git
