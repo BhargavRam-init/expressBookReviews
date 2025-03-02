@@ -52,15 +52,22 @@ public_users.get('/isbn/:isbn', async function (req, res) {
 });
 
 // Get book details based on author
-public_users.get('/author/:author', function (req, res) {
+public_users.get('/author/:author', async function (req, res) {
   const { author } = req.params;
-  const BooksbyAuthor = Object.values(books).filter(
-    (book) => book.author == author
-  );
-  if (BooksbyAuthor.length == 0) {
-    return res.status(404).json({ message: "No books found by this author" });
+
+  try {
+    const booksByAuthor = Object.values(books).filter(
+      (book) => book.author === author
+    );
+
+    if (booksByAuthor.length === 0) {
+      return res.status(404).json({ message: "No books found by this author" });
+    }
+
+    return res.status(200).json(booksByAuthor);
+  } catch (error) {
+    return res.status(500).json({ message: "Failed to fetch books by author" });
   }
-  return res.status(200).json(BooksbyAuthor);
 });
 
 // Get all books based on title
