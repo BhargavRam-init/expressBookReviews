@@ -13,10 +13,10 @@ This is a book review application built with Node.js, Express, and JWT authentic
   - Delete their reviews.
 
 ## Screenshots
-- [Get All Books](expressBookReviews/tasks/Task1/1-getallbooks.png)
-- [Login Success](expressBookReviews/tasks/Task7/7-login.png)
-- [Add Review](expressBookReviews/tasks/Task8/8-reviewadded.1.png)
-- [Delete Review](expressBookReviews/tasks/Task9/9-deletereview.1.png)
+- [Get All Books](Tasks/Task1/1-getallbooks.png)
+- [Login Success](Tasks/Task7/7-login.png)
+- [Add Review](Tasks/Task8/8-reviewadded.1.png)
+- [Delete Review](Tasks/Task9/9-deletereview.1.png)
 
 ## How to Run
 1. Clone the repository:
